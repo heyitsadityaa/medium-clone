@@ -8,6 +8,8 @@ import Image from "next/image";
 import React from "react";
 import { PortableTextInput } from "sanity";
 
+export const revalidate = 30; //revalidate at most 30 sec.
+
 async function getData(slug: string) {
   const query = `
     *[_type == "post" && slug.current == '${slug}' ]{

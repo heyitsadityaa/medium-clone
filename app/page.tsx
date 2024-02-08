@@ -7,6 +7,8 @@ import post from "@/sanity/schemas/post";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 30; //revalidate at most 30 sec.
+
 async function getData() {
   const query = `*[_type == "post"]{
     _id,
