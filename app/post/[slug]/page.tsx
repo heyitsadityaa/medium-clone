@@ -67,7 +67,7 @@ async function Post({ params }: { params: { slug: string } }) {
         </div>
       </article>
 
-      <div className="mt-5 max-w-3xl mx-auto prose prose-lg prose-li:marker:text-primary mb-10 ">
+      <div className="mt-5 max-w-3xl mx-auto prose prose-lg prose-li:marker:text-primary mb-10 p-3">
         {" "}
         <PortableText value={data.body} />{" "}
       </div>
