@@ -45,12 +45,12 @@ async function Post({ params }: { params: { slug: string } }) {
         alt="mainImage"
       />
       <article className="max-w-3xl mx-auto p-5">
-        <h1 className="font-3xl mt-10 mb-3 font-bold">{data.title}</h1>
-        <h2 className="text-xl font-light text-gray-500 mb-2">
+        <h1 className="text-4xl mt-10 mb-3 font-bold">{data.title}</h1>
+        <h2 className="text-lg font-light text-gray-500 mb-2">
           {data.description}
         </h2>
 
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 ">
           <Image
             className="w-10 h-10 object-cover rounded-full"
             width={800}
@@ -67,7 +67,7 @@ async function Post({ params }: { params: { slug: string } }) {
         </div>
       </article>
 
-      <div className="mt-5 max-w-3xl mx-auto prose prose-lg prose-li:marker:text-primary">
+      <div className="mt-5 max-w-3xl mx-auto prose prose-lg prose-li:marker:text-primary mb-10 ">
         {" "}
         <PortableText value={data.body} />{" "}
       </div>
